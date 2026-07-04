@@ -6,15 +6,42 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #fdfaf0;
+  background-color: #fdeef2;
   color: #3d3226;
   text-align: center;
+}
+
+body.home-page {
+  background-color: #fdeef2;
+}
+
+body.products-page {
+  background-color: #fbe4ec;
+}
+
+body.contact-page {
+  background-color: #fdf0f5;
 }
 
 header {
   background-color: #f0cf7e;
   padding: 25px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-brand img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 header h1 {
@@ -77,6 +104,31 @@ main {
   line-height: 1.6;
   font-size: 16px;
   max-width: 700px;
+}
+
+.contact-page .section p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #3d2b1f;
+}
+
+.home-page .section p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #3d2b1f;
+}
+
+.products-page .section p,
+.products-page main > p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #3d2b1f;
 }
 
 .images {
@@ -168,7 +220,8 @@ footer {
   background-color: #f0cf7e;
   padding: 15px;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
   color: #5a3e1b;
 }
 
