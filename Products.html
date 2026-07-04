@@ -3,21 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Product Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- MD Juhayer Awsaf Chowdhury, ID: 2431579 -->
+
   <header>
     <h1>Kitty Pure</h1>
     <p>Our Products</p>
   </header>
+
   <nav>
-    <a href="homepage.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="products.html">Products</a>
     <a href="contact.html">Contact Us</a>
   </nav>
+
   <main>
+
     <p>Browse our full range of cat food and litter products below. All items are available for home delivery.</p>
     <p>Prices are shown in Bangladeshi Taka (BDT). Click "Add to Cart" to try out the shopping button.</p>
+
     <section class="section">
       <h2>Dry Food - Whiskas</h2>
       <div class="product-grid">
@@ -26,25 +34,26 @@
           <img src="whiskas3kg.jpg" alt="Whiskas 3kg">
           <h3>Whiskas 3kg</h3>
           <p>Price: 2,150 Tk</p>
-          <button onclick="addToCart('Whiskas 3kg')">Add to Cart</button>
+          <button onclick="addToCart('Whiskas 3kg', 2150)">Add to Cart</button>
         </div>
 
         <div class="product-card">
           <img src="whiskas1kg.jpg" alt="Whiskas 1kg">
           <h3>Whiskas 1kg</h3>
           <p>Price: 780 Tk</p>
-          <button onclick="addToCart('Whiskas 1kg')">Add to Cart</button>
+          <button onclick="addToCart('Whiskas 1kg', 780)">Add to Cart</button>
         </div>
 
         <div class="product-card">
           <img src="whiskas450g.jpg" alt="Whiskas 450g">
           <h3>Whiskas 450g</h3>
           <p>Price: 420 Tk</p>
-          <button onclick="addToCart('Whiskas 450g')">Add to Cart</button>
+          <button onclick="addToCart('Whiskas 450g', 420)">Add to Cart</button>
         </div>
 
       </div>
     </section>
+
     <section class="section">
       <h2>Cat Litter</h2>
       <div class="product-grid">
@@ -53,18 +62,19 @@
           <img src="litter5kg.jpg" alt="Cat litter 5kg">
           <h3>Cat Litter 5kg</h3>
           <p>Price: 950 Tk</p>
-          <button onclick="addToCart('Cat Litter 5kg')">Add to Cart</button>
+          <button onclick="addToCart('Cat Litter 5kg', 950)">Add to Cart</button>
         </div>
 
         <div class="product-card">
           <img src="litter10kg.jpg" alt="Cat litter 10kg">
           <h3>Cat Litter 10kg</h3>
           <p>Price: 1,700 Tk</p>
-          <button onclick="addToCart('Cat Litter 10kg')">Add to Cart</button>
+          <button onclick="addToCart('Cat Litter 10kg', 1700)">Add to Cart</button>
         </div>
 
       </div>
     </section>
+
     <section class="section">
       <h2>Wet Food</h2>
       <div class="product-grid">
@@ -73,7 +83,7 @@
           <img src="smartheart.jpg" alt="SmartHeart wet food pouch">
           <h3>SmartHeart Wet Food Pouch</h3>
           <p>Price: 150 Tk</p>
-          <button onclick="addToCart('SmartHeart Wet Food Pouch')">Add to Cart</button>
+          <button onclick="addToCart('SmartHeart Wet Food Pouch', 150)">Add to Cart</button>
         </div>
 
         <div class="product-card">
@@ -86,10 +96,20 @@
       </div>
     </section>
 
+    <!-- Basket calculator -->
+    <section class="section basket">
+      <h2>Your Basket</h2>
+      <p id="basketItems">No items added yet.</p>
+      <p id="basketTotal">Total: 0 Tk</p>
+      <button onclick="clearCart()">Clear Basket</button>
+    </section>
+
   </main>
+
   <footer>
     <p>Made By MD Juhayer Awsaf Chowdhury | ID: 2431579</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

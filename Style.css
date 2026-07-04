@@ -19,15 +19,19 @@ header {
 
 header h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 38px;
+  font-size: 44px;
   color: #5a3e1b;
   letter-spacing: 1px;
 }
 
 header p {
-  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
   color: #6b4f22;
-  margin-top: 5px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
 }
 
 nav {
@@ -89,12 +93,14 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
 .features {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .feature-box {
   background-color: #f0cf7e;
   flex: 1;
@@ -104,17 +110,20 @@ main {
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
 .feature-box h3 {
   font-family: 'Poppins', sans-serif;
   color: #5a3e1b;
   margin-bottom: 8px;
 }
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   justify-items: center;
 }
+
 .product-card {
   background-color: #fdf6e3;
   border: 1px solid #b9e3a8;
@@ -124,17 +133,20 @@ main {
   max-width: 220px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
 .product-card h3 {
   font-family: 'Poppins', sans-serif;
   color: #a9762f;
   margin: 8px 0;
 }
+
 .product-card img {
   width: 100%;
   height: 130px;
   object-fit: cover;
   border-radius: 8px;
 }
+
 button {
   font-family: 'Poppins', sans-serif;
   background-color: #8fd18a;
@@ -147,13 +159,36 @@ button {
   cursor: pointer;
   margin-top: 10px;
 }
+
 button:hover {
   background-color: #6cbf68;
 }
+
 footer {
   background-color: #f0cf7e;
   padding: 15px;
   margin-top: 30px;
   font-size: 14px;
   color: #5a3e1b;
+}
+
+.basket {
+  background-color: #eef7e9;
+  border: 2px dashed #8fd18a;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.basket p {
+  white-space: pre-line;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#basketTotal {
+  font-weight: 600;
+  color: #a9762f;
+  font-size: 18px;
 }
